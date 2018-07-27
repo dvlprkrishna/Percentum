@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/hint_billAmt"
+        android:layout_width="113dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txtView_TotalBill"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Placeholder_billAmt"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/hint_TotalBillAmt"
+        android:inputType="numberDecimal"
+        android:text="@string/Placeholder_BillAmt"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hint_billAmt"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/hint_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtView_Discount"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/hint_billAmt"
+        app:layout_constraintTop_toBottomOf="@+id/hint_billAmt" />
+
+    <EditText
+        android:id="@+id/Placeholder_discount"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_discount"
+        android:inputType="numberDecimal"
+        android:text="@string/Placeholder_Percent"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hint_percent"
+        app:layout_constraintStart_toStartOf="@+id/Placeholder_billAmt" />
+
+    <TextView
+        android:id="@+id/dummy_percent"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/Placeholder_DummyPercent"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Placeholder_discount"
+        app:layout_constraintStart_toEndOf="@+id/Placeholder_discount" />
+
+    <TextView
+        android:id="@+id/hint_amtSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtView_AmtSaved"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/hint_percent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_percent" />
+
+    <TextView
+        android:id="@+id/placeholder_amtSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Placeholder_AmtSaved"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hint_amtSaved"
+        app:layout_constraintStart_toStartOf="@+id/Placeholder_discount" />
+
+    <TextView
+        android:id="@+id/hint_amtPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/txtView_FinalPrice"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_amtSaved" />
+
+    <TextView
+        android:id="@+id/placeholder_amtPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Placeholder_AmtPaid"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_amtPaid" />
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_Calculate"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_amtPaid" />
+
+</android.support.constraint.ConstraintLayout>

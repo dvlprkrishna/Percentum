@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Percentum</string>
+    <string name="txtView_TotalBill">Total Bill</string>
+    <string name="txtView_Discount">Discount Percent</string>
+    <string name="txtView_AmtSaved">Amount Saved</string>
+    <string name="txtView_FinalPrice">Amount to be paid</string>
+    <string name="btn_Calculate">Calculate</string>
+    <string name="Placeholder_AmtPaid">Rs. 000</string>
+    <string name="Placeholder_Rupee">Rs.</string>
+    <string name="Placeholder_AmtSaved">Rs. 00</string>
+    <string name="Placeholder_DummyPercent">%</string>
+    <string name="Placeholder_Percent">15</string>
+    <string name="Placeholder_BillAmt">000.00</string>
+    <string name="hint_TotalBillAmt">Enter Total Amount</string>
+    <string name="hint_discount">hint_Discount</string>
+</resources>
